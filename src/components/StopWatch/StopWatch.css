@@ -1,0 +1,40 @@
+.stopwatch {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.stopwatch__clock-image {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.stopwatch__hand-image {
+  position: absolute;
+  left: 48%;
+  top: 75px;
+  width: 40px;
+  height: 150px;
+  z-index: 2;
+}
+
+.stopwatch__hand {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  top: calc(50% - 125px);
+  left: calc(50% - 125px);
+  z-index: 2;
+}
+
+.stopwatch__hand::after {
+  width: 2px;
+  height: 125px;
+  background: black;
+  content: "";
+  background: #333;
+  border-radius: 4px 4px 0 0;
+}
