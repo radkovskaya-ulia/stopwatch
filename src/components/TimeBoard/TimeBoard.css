@@ -1,6 +1,8 @@
-.timeboard{
+.timeboard {
   font-size: 18px;
   line-height: 28px;
   display: flex;
   justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }

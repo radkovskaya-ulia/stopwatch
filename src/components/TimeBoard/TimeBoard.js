@@ -1,10 +1,20 @@
-import React from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+
 import "./TimeBoard.css";
 
-function TimeBoard({time}){
-  return (
-    <div className="timeboard">Прошло {time} секунд</div>
-  )
+TimeBoard.propTypes = {
+  time: PropTypes.number,
+};
+
+function TimeBoard({ time }) {
+  return <div className="timeboard">Прошло {time} секунд</div>;
 }
 
-export default TimeBoard
+const mapStateToProps = (state) => {
+  return {
+    time: state.time,
+  };
+};
+
+export default connect(mapStateToProps)(TimeBoard);

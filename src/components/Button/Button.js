@@ -1,10 +1,18 @@
-import React from "react";
+import PropTypes from "prop-types";
+
 import "./Button.css";
 
-function ButtonBoard({text, buttonAction}){
+Button.propTypes = {
+  text: PropTypes.string,
+  buttonAction: PropTypes.func,
+};
+
+function Button({ text, buttonAction }) {
   return (
-    <button className="buttonboard__button" onClick={buttonAction}>{text}</button>
-  )
+    <button className="buttonboard__button" onClick={buttonAction}>
+      {text}
+    </button>
+  );
 }
 
-export default ButtonBoard
+export default Button;

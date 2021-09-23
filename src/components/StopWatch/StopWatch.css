@@ -31,10 +31,11 @@
 }
 
 .stopwatch__hand::after {
-  width: 2px;
-  height: 125px;
-  background: black;
+  background: url("../../images/hand.png") 55% 50% no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 130px;
   content: "";
-  background: #333;
   border-radius: 4px 4px 0 0;
+  z-index: 4;
 }
